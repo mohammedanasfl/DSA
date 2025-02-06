@@ -1,4 +1,4 @@
-package leetCodeQuestions;
+package leetCodeDailyQuestions;
 
 public class MaxAscendingSum {
     public static int maxAscendingSum(int[] nums) {

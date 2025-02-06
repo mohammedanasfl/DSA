@@ -1,4 +1,4 @@
-package leetCodeQuestions;
+package leetCodeDailyQuestions;
 
 import java.util.Arrays;
 
