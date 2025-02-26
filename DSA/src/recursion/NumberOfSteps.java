@@ -8,12 +8,7 @@ public class NumberOfSteps {
     }
     public static int numberOfSteps(int num) {
 
-        if(num==0) return count;
-        count++;
-        if(num %2 !=0) {
-           return numberOfSteps(num-=1);
-        }
-        return  numberOfSteps(num/=2);
+       return 1;
 
     }
 }
