@@ -20,7 +20,7 @@ public class MinimumTotal {
 
     public static void main(String[] args) {
         List<List<Integer>> triangle = Arrays.asList(
-                Arrays.asList(-1),
+                List.of(-1),
                 Arrays.asList(2, 3),
                 Arrays.asList(1,-1,-3)
         );

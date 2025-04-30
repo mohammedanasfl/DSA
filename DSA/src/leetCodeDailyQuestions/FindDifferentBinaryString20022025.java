@@ -1,14 +1,13 @@
 package leetCodeDailyQuestions;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
 public class FindDifferentBinaryString20022025 {
     public static String  findDifferentBinaryString(String[] nums) {
         Set<String> set = new HashSet<>();
-        for (String num : nums) {
-            set.add(num);
-        }
+        Collections.addAll(set, nums);
         return generateBinaryString("", nums.length, set);
     }
 

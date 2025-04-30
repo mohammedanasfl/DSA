@@ -35,9 +35,7 @@ public class InversionCount {
         while (i <= mid) temp[k++] = arr[i++];
         while (j <= right) temp[k++] = arr[j++];
 
-        for (int l = 0; l < temp.length; l++) {
-            arr[left + l] = temp[l];
-        }
+        System.arraycopy(temp, 0, arr, left + 0, temp.length);
 
         return count;
     }

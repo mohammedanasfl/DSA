@@ -1,7 +1,7 @@
 package stack;
 
 public class CustomStack {
-    protected int data[];
+    protected int[] data;
     private static final int FIXED_SIZE=10;
     public int ptr=-1;
 

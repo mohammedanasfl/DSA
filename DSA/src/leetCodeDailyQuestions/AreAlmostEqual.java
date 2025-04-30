@@ -9,8 +9,8 @@ public class AreAlmostEqual {
             return false;
         }
 
-        char c[]=s1.toCharArray();
-        char d[]=s2.toCharArray();
+        char[] c =s1.toCharArray();
+        char[] d =s2.toCharArray();
         Arrays.sort(c);
         Arrays.sort(d);
         if(Arrays.equals(c,d)) {

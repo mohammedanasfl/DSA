@@ -12,7 +12,7 @@ public class FindMissingAndRepeatedValues {
        int []fre=new int[n+1];
        int repeated=-1,missing=-1;
 
-        for(int i[]:grid){
+        for(int[] i :grid){
             for(int j:i){
                 fre[j]++;
             }
