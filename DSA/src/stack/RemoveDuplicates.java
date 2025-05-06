@@ -6,16 +6,15 @@ public class RemoveDuplicates {
     public static String removeDuplicates(String s) {
         char [] c=s.toCharArray();
         Stack<Character>stack=new Stack<>();
-        stack.push(c[0]);
-        for(int i=1;i<c.length;i++){
-            if( !stack.isEmpty() && c[i]==stack.peek()){
+        for (char value : c) {
+            if (!stack.isEmpty() && value == stack.peek()) {
                 stack.pop();
-            }else{
-                stack.push(c[i]);
+            } else {
+                stack.push(value);
             }
         }
        StringBuilder stringBuilder=new StringBuilder();
-        stack.forEach(str->stringBuilder.append(str));
+        stack.forEach(stringBuilder::append);
         return stringBuilder.toString();
 
     }
